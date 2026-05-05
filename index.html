@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Exposés - Accueil</title>
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header avec bannière -->
+    <header>
+        <div class="banner">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200" alt="Bannière étudiants" class="banner-img">
+            <div class="banner-text">
+                <h1>Mes Exposés</h1>
+                <p>La plateforme des meilleurs exposés scolaires</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu de navigation horizontal -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="exposes.html">Exposés</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Bouton hamburger pour mobile -->
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="container">
+        <!-- Section de bienvenue -->
+        <section class="welcome-section">
+            <h2>Bienvenue sur Mes Exposés</h2>
+            <p class="intro-text">
+                Mes Exposés est une plateforme dédiée aux élèves et étudiants qui souhaitent partager et consulter des exposés de qualité. 
+                Que vous prépariez un devoir en Histoire, en SVT ou en Géographie, vous trouverez ici des ressources complètes et bien structurées.
+            </p>
+            <p id="welcome-message" class="dynamic-message"></p>
+        </section>
+
+        <!-- Section des exposés récents -->
+        <section class="recent-exposes">
+            <h2>Exposés Récents</h2>
+            <div class="cards-grid">
+                <!-- Carte exposé 1 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=400" alt="Histoire">
+                    <div class="card-content">
+                        <span class="tag history">Histoire</span>
+                        <h3>La Révolution Française</h3>
+                        <p>Les causes, les événements majeurs et les conséquences de la Révolution de 1789.</p>
+                        <a href="expose1.html" class="btn-read">Lire l'exposé</a>
+                    </div>
+                </article>
+
+                <!-- Carte exposé 2 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400" alt="SVT">
+                    <div class="card-content">
+                        <span class="tag svt">SVT</span>
+                        <h3>Le Changement Climatique</h3>
+                        <p>Comprendre les mécanismes du réchauffement climatique et ses impacts sur notre planète.</p>
+                        <a href="expose2.html" class="btn-read">Lire l'exposé</a>
+                    </div>
+                </article>
+
+                <!-- Carte exposé 3 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400" alt="Géographie">
+                    <div class="card-content">
+                        <span class="tag geo">Géographie</span>
+                        <h3>Les Volcans du Monde</h3>
+                        <p>Exploration des plus grands volcans actifs et de leur impact sur les populations.</p>
+                        <button class="btn-read" onclick="showComingSoon()">Lire l'exposé</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section "En savoir plus" avec bouton interactif -->
+        <section class="more-info">
+            <h2>Pourquoi choisir Mes Exposés ?</h2>
+            <div id="extra-content" class="hidden-content">
+                <ul>
+                    <li>✅ Exposés vérifiés et bien structurés</li>
+                    <li>✅ Contenu actualisé régulièrement</li>
+                    <li>✅ Accessible gratuitement à tous les élèves</li>
+                    <li>✅ Organisation par matière pour faciliter la recherche</li>
+                </ul>
+            </div>
+            <button id="btn-more" class="btn-toggle">En savoir plus</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Mes Exposés. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="index.html">Accueil</a>
+                <a href="exposes.html">Exposés</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
